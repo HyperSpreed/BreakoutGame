@@ -1,0 +1,361 @@
+[gd_scene load_steps=12 format=3 uid="uid://p3ic6c6mcr74"]
+
+[ext_resource type="PackedScene" uid="uid://drem15o6yhs6h" path="res://Scenes/ceiling.tscn" id="1_na70w"]
+[ext_resource type="Script" path="res://Scripts/main.gd" id="1_ufxdn"]
+[ext_resource type="PackedScene" uid="uid://bgkosq0ps73mh" path="res://Scenes/walls.tscn" id="2_qli44"]
+[ext_resource type="PackedScene" uid="uid://ba7vo31wdtxij" path="res://Scenes/player.tscn" id="3_6o7uf"]
+[ext_resource type="PackedScene" uid="uid://dxpxk4whkfdib" path="res://Scenes/ball.tscn" id="4_pjgi5"]
+[ext_resource type="PackedScene" uid="uid://migo7jagtcig" path="res://Scenes/brick.tscn" id="6_k1ovj"]
+[ext_resource type="Script" path="res://Scripts/label.gd" id="7_6qclh"]
+[ext_resource type="FontFile" uid="uid://c3ay42atfwftl" path="res://Assets/PixelOperator8.ttf" id="7_ixaco"]
+[ext_resource type="Script" path="res://Scripts/game_over_area.gd" id="8_wo11i"]
+[ext_resource type="FontFile" uid="uid://bg768irpe2ncy" path="res://Assets/PixelOperator8-Bold.ttf" id="10_5f5w8"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_eyqg8"]
+size = Vector2(1243.5, 225)
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_ufxdn")
+
+[node name="WallLeftSide" parent="." instance=ExtResource("2_qli44")]
+
+[node name="WallRightSide" parent="." instance=ExtResource("2_qli44")]
+position = Vector2(1280, 360)
+
+[node name="Ceiling" parent="." instance=ExtResource("1_na70w")]
+
+[node name="Player" parent="." instance=ExtResource("3_6o7uf")]
+position = Vector2(640, 650)
+
+[node name="Ball" parent="." instance=ExtResource("4_pjgi5")]
+position = Vector2(498, 488)
+
+[node name="TotalBricks" type="Node" parent="."]
+
+[node name="Brick" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+position = Vector2(642, 250)
+scale = Vector2(2.5, 2.5)
+
+[node name="Brick3" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+position = Vector2(802, 250)
+scale = Vector2(2.5, 2.5)
+
+[node name="Brick4" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+position = Vector2(722, 250)
+scale = Vector2(2.5, 2.5)
+
+[node name="Brick5" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+position = Vector2(482, 250)
+scale = Vector2(2.5, 2.5)
+
+[node name="Brick6" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+position = Vector2(562, 250)
+scale = Vector2(2.5, 2.5)
+
+[node name="Brick2" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+position = Vector2(242, 250)
+scale = Vector2(2.5, 2.5)
+
+[node name="Brick7" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+position = Vector2(402, 250)
+scale = Vector2(2.5, 2.5)
+
+[node name="Brick8" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+position = Vector2(322, 250)
+scale = Vector2(2.5, 2.5)
+
+[node name="Brick9" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+position = Vector2(82, 250)
+scale = Vector2(2.5, 2.5)
+
+[node name="Brick10" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+position = Vector2(162, 250)
+scale = Vector2(2.5, 2.5)
+
+[node name="Brick11" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+position = Vector2(1042, 250)
+scale = Vector2(2.5, 2.5)
+
+[node name="Brick12" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+position = Vector2(1202, 250)
+scale = Vector2(2.5, 2.5)
+
+[node name="Brick13" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+position = Vector2(1122, 250)
+scale = Vector2(2.5, 2.5)
+
+[node name="Brick14" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+position = Vector2(882, 250)
+scale = Vector2(2.5, 2.5)
+
+[node name="Brick15" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+position = Vector2(962, 250)
+scale = Vector2(2.5, 2.5)
+
+[node name="Brick16" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+position = Vector2(642, 202)
+scale = Vector2(2.5, 2.5)
+
+[node name="Brick17" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+position = Vector2(802, 202)
+scale = Vector2(2.5, 2.5)
+
+[node name="Brick18" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+position = Vector2(722, 202)
+scale = Vector2(2.5, 2.5)
+
+[node name="Brick19" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+position = Vector2(482, 202)
+scale = Vector2(2.5, 2.5)
+
+[node name="Brick20" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+position = Vector2(562, 202)
+scale = Vector2(2.5, 2.5)
+
+[node name="Brick21" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+position = Vector2(242, 202)
+scale = Vector2(2.5, 2.5)
+
+[node name="Brick22" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+position = Vector2(402, 202)
+scale = Vector2(2.5, 2.5)
+
+[node name="Brick23" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+position = Vector2(322, 202)
+scale = Vector2(2.5, 2.5)
+
+[node name="Brick24" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+position = Vector2(82, 202)
+scale = Vector2(2.5, 2.5)
+
+[node name="Brick25" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+position = Vector2(162, 202)
+scale = Vector2(2.5, 2.5)
+
+[node name="Brick26" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+position = Vector2(1042, 202)
+scale = Vector2(2.5, 2.5)
+
+[node name="Brick27" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+position = Vector2(1202, 202)
+scale = Vector2(2.5, 2.5)
+
+[node name="Brick28" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+position = Vector2(1122, 202)
+scale = Vector2(2.5, 2.5)
+
+[node name="Brick29" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+position = Vector2(882, 202)
+scale = Vector2(2.5, 2.5)
+
+[node name="Brick30" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+position = Vector2(962, 202)
+scale = Vector2(2.5, 2.5)
+
+[node name="Brick31" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+position = Vector2(642, 154)
+scale = Vector2(2.5, 2.5)
+
+[node name="Brick32" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+position = Vector2(802, 154)
+scale = Vector2(2.5, 2.5)
+
+[node name="Brick33" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+position = Vector2(722, 154)
+scale = Vector2(2.5, 2.5)
+
+[node name="Brick34" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+position = Vector2(482, 154)
+scale = Vector2(2.5, 2.5)
+
+[node name="Brick35" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+position = Vector2(562, 154)
+scale = Vector2(2.5, 2.5)
+
+[node name="Brick36" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+position = Vector2(242, 154)
+scale = Vector2(2.5, 2.5)
+
+[node name="Brick37" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+position = Vector2(402, 154)
+scale = Vector2(2.5, 2.5)
+
+[node name="Brick38" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+position = Vector2(322, 154)
+scale = Vector2(2.5, 2.5)
+
+[node name="Brick39" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+position = Vector2(82, 154)
+scale = Vector2(2.5, 2.5)
+
+[node name="Brick40" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+position = Vector2(162, 154)
+scale = Vector2(2.5, 2.5)
+
+[node name="Brick41" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+position = Vector2(1042, 154)
+scale = Vector2(2.5, 2.5)
+
+[node name="Brick42" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+position = Vector2(1202, 154)
+scale = Vector2(2.5, 2.5)
+
+[node name="Brick43" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+position = Vector2(1122, 154)
+scale = Vector2(2.5, 2.5)
+
+[node name="Brick44" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+position = Vector2(882, 154)
+scale = Vector2(2.5, 2.5)
+
+[node name="Brick45" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+position = Vector2(962, 154)
+scale = Vector2(2.5, 2.5)
+
+[node name="Brick46" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+position = Vector2(642, 106)
+scale = Vector2(2.5, 2.5)
+
+[node name="Brick47" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+position = Vector2(802, 106)
+scale = Vector2(2.5, 2.5)
+
+[node name="Brick48" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+position = Vector2(722, 106)
+scale = Vector2(2.5, 2.5)
+
+[node name="Brick49" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+position = Vector2(482, 106)
+scale = Vector2(2.5, 2.5)
+
+[node name="Brick50" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+position = Vector2(562, 106)
+scale = Vector2(2.5, 2.5)
+
+[node name="Brick51" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+position = Vector2(242, 106)
+scale = Vector2(2.5, 2.5)
+
+[node name="Brick52" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+position = Vector2(402, 106)
+scale = Vector2(2.5, 2.5)
+
+[node name="Brick53" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+position = Vector2(322, 106)
+scale = Vector2(2.5, 2.5)
+
+[node name="Brick54" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+position = Vector2(82, 106)
+scale = Vector2(2.5, 2.5)
+
+[node name="Brick55" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+position = Vector2(162, 106)
+scale = Vector2(2.5, 2.5)
+
+[node name="Brick56" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+position = Vector2(1042, 106)
+scale = Vector2(2.5, 2.5)
+
+[node name="Brick57" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+position = Vector2(1202, 106)
+scale = Vector2(2.5, 2.5)
+
+[node name="Brick58" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+position = Vector2(1122, 106)
+scale = Vector2(2.5, 2.5)
+
+[node name="Brick59" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+position = Vector2(882, 106)
+scale = Vector2(2.5, 2.5)
+
+[node name="Brick60" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+position = Vector2(962, 106)
+scale = Vector2(2.5, 2.5)
+
+[node name="Brick61" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+position = Vector2(642, 298)
+scale = Vector2(2.5, 2.5)
+
+[node name="Brick62" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+position = Vector2(802, 298)
+scale = Vector2(2.5, 2.5)
+
+[node name="Brick63" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+position = Vector2(722, 298)
+scale = Vector2(2.5, 2.5)
+
+[node name="Brick64" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+position = Vector2(482, 298)
+scale = Vector2(2.5, 2.5)
+
+[node name="Brick65" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+position = Vector2(562, 298)
+scale = Vector2(2.5, 2.5)
+
+[node name="Brick66" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+position = Vector2(242, 298)
+scale = Vector2(2.5, 2.5)
+
+[node name="Brick67" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+position = Vector2(402, 298)
+scale = Vector2(2.5, 2.5)
+
+[node name="Brick68" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+position = Vector2(322, 298)
+scale = Vector2(2.5, 2.5)
+
+[node name="Brick69" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+position = Vector2(82, 298)
+scale = Vector2(2.5, 2.5)
+
+[node name="Brick70" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+position = Vector2(162, 298)
+scale = Vector2(2.5, 2.5)
+
+[node name="Brick71" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+position = Vector2(1042, 298)
+scale = Vector2(2.5, 2.5)
+
+[node name="Brick72" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+position = Vector2(1202, 298)
+scale = Vector2(2.5, 2.5)
+
+[node name="Brick73" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+position = Vector2(1122, 298)
+scale = Vector2(2.5, 2.5)
+
+[node name="Brick74" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+position = Vector2(882, 298)
+scale = Vector2(2.5, 2.5)
+
+[node name="Brick75" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+position = Vector2(962, 298)
+scale = Vector2(2.5, 2.5)
+
+[node name="ScoreLabel" type="Label" parent="."]
+offset_left = 600.0
+offset_top = 35.0
+offset_right = 680.0
+offset_bottom = 60.0
+theme_override_fonts/font = ExtResource("7_ixaco")
+text = "SCORE: 0"
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("7_6qclh")
+
+[node name="GameOverArea" type="Area2D" parent="."]
+script = ExtResource("8_wo11i")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GameOverArea"]
+position = Vector2(640.25, 832.5)
+shape = SubResource("RectangleShape2D_eyqg8")
+
+[node name="HPLabel" type="Label" parent="."]
+offset_left = 560.0
+offset_top = 650.0
+offset_right = 720.0
+offset_bottom = 730.0
+theme_override_fonts/font = ExtResource("10_5f5w8")
+text = "Lives: 3"
+horizontal_alignment = 1
+vertical_alignment = 1
