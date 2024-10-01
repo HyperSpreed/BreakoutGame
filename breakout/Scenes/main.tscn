@@ -17,244 +17,244 @@ size = Vector2(1243.5, 225)
 [node name="Main" type="Node2D"]
 script = ExtResource("1_ufxdn")
 
-[node name="WallLeftSide" parent="." instance=ExtResource("2_qli44")]
+[node name="WallLeftSide" parent="." groups=["Walls"] instance=ExtResource("2_qli44")]
 
-[node name="WallRightSide" parent="." instance=ExtResource("2_qli44")]
+[node name="WallRightSide" parent="." groups=["Walls"] instance=ExtResource("2_qli44")]
 position = Vector2(1280, 360)
 
-[node name="Ceiling" parent="." instance=ExtResource("1_na70w")]
+[node name="Ceiling" parent="." groups=["Walls"] instance=ExtResource("1_na70w")]
 
-[node name="Player" parent="." instance=ExtResource("3_6o7uf")]
+[node name="Player" parent="." groups=["Paddle"] instance=ExtResource("3_6o7uf")]
 position = Vector2(640, 650)
 
 [node name="Ball" parent="." instance=ExtResource("4_pjgi5")]
 position = Vector2(498, 448)
 
-[node name="TotalBricks" type="Node" parent="."]
+[node name="Bricks" type="Node" parent="."]
 
-[node name="Brick" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+[node name="Brick" parent="Bricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
 position = Vector2(642, 250)
 
-[node name="Brick3" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+[node name="Brick3" parent="Bricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
 position = Vector2(802, 250)
 
-[node name="Brick4" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+[node name="Brick4" parent="Bricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
 position = Vector2(722, 250)
 
-[node name="Brick5" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+[node name="Brick5" parent="Bricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
 position = Vector2(482, 250)
 
-[node name="Brick6" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+[node name="Brick6" parent="Bricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
 position = Vector2(562, 250)
 
-[node name="Brick2" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+[node name="Brick2" parent="Bricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
 position = Vector2(242, 250)
 
-[node name="Brick7" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+[node name="Brick7" parent="Bricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
 position = Vector2(402, 250)
 
-[node name="Brick8" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+[node name="Brick8" parent="Bricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
 position = Vector2(322, 250)
 
-[node name="Brick9" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+[node name="Brick9" parent="Bricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
 position = Vector2(82, 250)
 
-[node name="Brick10" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+[node name="Brick10" parent="Bricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
 position = Vector2(162, 250)
 
-[node name="Brick11" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+[node name="Brick11" parent="Bricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
 position = Vector2(1042, 250)
 
-[node name="Brick12" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+[node name="Brick12" parent="Bricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
 position = Vector2(1202, 250)
 
-[node name="Brick13" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+[node name="Brick13" parent="Bricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
 position = Vector2(1122, 250)
 
-[node name="Brick14" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+[node name="Brick14" parent="Bricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
 position = Vector2(882, 250)
 
-[node name="Brick15" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+[node name="Brick15" parent="Bricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
 position = Vector2(962, 250)
 
-[node name="Brick16" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+[node name="Brick16" parent="Bricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
 position = Vector2(642, 202)
 
-[node name="Brick17" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+[node name="Brick17" parent="Bricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
 position = Vector2(802, 202)
 
-[node name="Brick18" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+[node name="Brick18" parent="Bricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
 position = Vector2(722, 202)
 
-[node name="Brick19" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+[node name="Brick19" parent="Bricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
 position = Vector2(482, 202)
 
-[node name="Brick20" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+[node name="Brick20" parent="Bricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
 position = Vector2(562, 202)
 
-[node name="Brick21" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+[node name="Brick21" parent="Bricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
 position = Vector2(242, 202)
 
-[node name="Brick22" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+[node name="Brick22" parent="Bricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
 position = Vector2(402, 202)
 
-[node name="Brick23" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+[node name="Brick23" parent="Bricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
 position = Vector2(322, 202)
 
-[node name="Brick24" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+[node name="Brick24" parent="Bricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
 position = Vector2(82, 202)
 
-[node name="Brick25" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+[node name="Brick25" parent="Bricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
 position = Vector2(162, 202)
 
-[node name="Brick26" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+[node name="Brick26" parent="Bricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
 position = Vector2(1042, 202)
 
-[node name="Brick27" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+[node name="Brick27" parent="Bricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
 position = Vector2(1202, 202)
 
-[node name="Brick28" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+[node name="Brick28" parent="Bricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
 position = Vector2(1122, 202)
 
-[node name="Brick29" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+[node name="Brick29" parent="Bricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
 position = Vector2(882, 202)
 
-[node name="Brick30" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+[node name="Brick30" parent="Bricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
 position = Vector2(962, 202)
 
-[node name="Brick31" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+[node name="Brick31" parent="Bricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
 position = Vector2(642, 154)
 
-[node name="Brick32" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+[node name="Brick32" parent="Bricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
 position = Vector2(802, 154)
 
-[node name="Brick33" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+[node name="Brick33" parent="Bricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
 position = Vector2(722, 154)
 
-[node name="Brick34" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+[node name="Brick34" parent="Bricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
 position = Vector2(482, 154)
 
-[node name="Brick35" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+[node name="Brick35" parent="Bricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
 position = Vector2(562, 154)
 
-[node name="Brick36" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+[node name="Brick36" parent="Bricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
 position = Vector2(242, 154)
 
-[node name="Brick37" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+[node name="Brick37" parent="Bricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
 position = Vector2(402, 154)
 
-[node name="Brick38" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+[node name="Brick38" parent="Bricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
 position = Vector2(322, 154)
 
-[node name="Brick39" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+[node name="Brick39" parent="Bricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
 position = Vector2(82, 154)
 
-[node name="Brick40" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+[node name="Brick40" parent="Bricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
 position = Vector2(162, 154)
 
-[node name="Brick41" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+[node name="Brick41" parent="Bricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
 position = Vector2(1042, 154)
 
-[node name="Brick42" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+[node name="Brick42" parent="Bricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
 position = Vector2(1202, 154)
 
-[node name="Brick43" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+[node name="Brick43" parent="Bricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
 position = Vector2(1122, 154)
 
-[node name="Brick44" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+[node name="Brick44" parent="Bricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
 position = Vector2(882, 154)
 
-[node name="Brick45" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+[node name="Brick45" parent="Bricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
 position = Vector2(962, 154)
 
-[node name="Brick46" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+[node name="Brick46" parent="Bricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
 position = Vector2(642, 106)
 
-[node name="Brick47" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+[node name="Brick47" parent="Bricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
 position = Vector2(802, 106)
 
-[node name="Brick48" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+[node name="Brick48" parent="Bricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
 position = Vector2(722, 106)
 
-[node name="Brick49" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+[node name="Brick49" parent="Bricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
 position = Vector2(482, 106)
 
-[node name="Brick50" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+[node name="Brick50" parent="Bricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
 position = Vector2(562, 106)
 
-[node name="Brick51" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+[node name="Brick51" parent="Bricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
 position = Vector2(242, 106)
 
-[node name="Brick52" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+[node name="Brick52" parent="Bricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
 position = Vector2(402, 106)
 
-[node name="Brick53" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+[node name="Brick53" parent="Bricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
 position = Vector2(322, 106)
 
-[node name="Brick54" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+[node name="Brick54" parent="Bricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
 position = Vector2(82, 106)
 
-[node name="Brick55" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+[node name="Brick55" parent="Bricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
 position = Vector2(162, 106)
 
-[node name="Brick56" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+[node name="Brick56" parent="Bricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
 position = Vector2(1042, 106)
 
-[node name="Brick57" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+[node name="Brick57" parent="Bricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
 position = Vector2(1202, 106)
 
-[node name="Brick58" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+[node name="Brick58" parent="Bricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
 position = Vector2(1122, 106)
 
-[node name="Brick59" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+[node name="Brick59" parent="Bricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
 position = Vector2(882, 106)
 
-[node name="Brick60" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+[node name="Brick60" parent="Bricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
 position = Vector2(962, 106)
 
-[node name="Brick61" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+[node name="Brick61" parent="Bricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
 position = Vector2(642, 298)
 
-[node name="Brick62" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+[node name="Brick62" parent="Bricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
 position = Vector2(802, 298)
 
-[node name="Brick63" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+[node name="Brick63" parent="Bricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
 position = Vector2(722, 298)
 
-[node name="Brick64" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+[node name="Brick64" parent="Bricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
 position = Vector2(482, 298)
 
-[node name="Brick65" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+[node name="Brick65" parent="Bricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
 position = Vector2(562, 298)
 
-[node name="Brick66" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+[node name="Brick66" parent="Bricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
 position = Vector2(242, 298)
 
-[node name="Brick67" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+[node name="Brick67" parent="Bricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
 position = Vector2(402, 298)
 
-[node name="Brick68" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+[node name="Brick68" parent="Bricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
 position = Vector2(322, 298)
 
-[node name="Brick69" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+[node name="Brick69" parent="Bricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
 position = Vector2(82, 298)
 
-[node name="Brick70" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+[node name="Brick70" parent="Bricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
 position = Vector2(162, 298)
 
-[node name="Brick71" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+[node name="Brick71" parent="Bricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
 position = Vector2(1042, 298)
 
-[node name="Brick72" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+[node name="Brick72" parent="Bricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
 position = Vector2(1202, 298)
 
-[node name="Brick73" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+[node name="Brick73" parent="Bricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
 position = Vector2(1122, 298)
 
-[node name="Brick74" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+[node name="Brick74" parent="Bricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
 position = Vector2(882, 298)
 
-[node name="Brick75" parent="TotalBricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
+[node name="Brick75" parent="Bricks" groups=["Bricks"] instance=ExtResource("6_k1ovj")]
 position = Vector2(962, 298)
 
 [node name="ScoreLabel" type="Label" parent="."]
