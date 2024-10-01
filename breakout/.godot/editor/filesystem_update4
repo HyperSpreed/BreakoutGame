@@ -1,0 +1,7 @@
+res://Scenes/main.tscn
+res://Scenes/player.gd
+res://Scripts/main.gd
+res://Scripts/ball.gd
+res://Scenes/brick.gd
+res://Scenes/brick.tscn
+res://Scenes/ball.tscn
